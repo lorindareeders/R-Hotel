@@ -1322,7 +1322,7 @@ figcaption {
 .navigation-item.w--current {
   opacity: 1;
   color: #1a1b1f;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navigation-item.w--current:hover {
@@ -2067,19 +2067,19 @@ figcaption {
 }
 
 .team-slide-wrapper {
-  width: 30%;
+  width: 45%;
   margin-right: 5%;
 }
 
 .team-block {
   background-color: #fff;
-  height: 500px;
+  height: 600px;
   padding-bottom: 0;
 }
 
 .team-member-image-two {
   width: 100%;
-  height: 40%;
+  height: auto;
   margin-bottom: 5px;
 }
 
@@ -2096,10 +2096,14 @@ figcaption {
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 600;
+  position: relative;
+  top: auto;
 }
 
 .team-member-text {
   margin-bottom: 20px;
+  padding-top: 10px;
+  display: block;
 }
 
 .text-link-arrow {
@@ -2422,7 +2426,7 @@ figcaption {
 .margin-bottom-24px-2 {
   margin-bottom: 24px;
   padding-top: 20px;
-  padding-right: 40px;
+  padding-right: 0;
 }
 
 .button-primary-2 {
@@ -2603,7 +2607,7 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   margin-left: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   display: flex;
 }
 
@@ -2612,10 +2616,12 @@ figcaption {
   justify-content: flex-start;
   align-items: flex-start;
   max-width: 46%;
+  height: 100%;
   display: flex;
 }
 
 .shadow-two-2 {
+  height: 100%;
   box-shadow: 0 4px 24px #96a3b514;
 }
 
@@ -2845,13 +2851,14 @@ figcaption {
 }
 
 .footer-form-two {
+  text-align: center;
   background-color: #f5f7fa;
   margin-bottom: 20px;
   padding: 64px 64px 20px;
 }
 
 .footer-form-container-two {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   display: flex;
 }
@@ -2980,6 +2987,8 @@ figcaption {
 }
 
 .footer-form-title-2 {
+  text-align: center;
+  padding-top: 20px;
   font-size: 24px;
   line-height: 32px;
 }
@@ -3038,6 +3047,23 @@ figcaption {
 .image-5 {
   width: 40%;
   height: auto;
+}
+
+.hero-wrapper-2-copy {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 0;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.image-6 {
+  height: 120%;
+}
+
+.image-7 {
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -3227,8 +3253,16 @@ figcaption {
   }
 
   .team-slide-wrapper {
-    width: 47%;
+    width: 100%;
     margin-right: 6%;
+  }
+
+  .team-member-image-two {
+    height: 400px;
+  }
+
+  .team-member-text {
+    padding-top: 20px;
   }
 
   .container-3 {
@@ -3277,6 +3311,10 @@ figcaption {
     margin-bottom: 40px;
   }
 
+  .footer-light {
+    background-color: #f5f7fa;
+  }
+
   .footer-wrapper-two {
     flex-wrap: wrap;
   }
@@ -3290,12 +3328,20 @@ figcaption {
     max-width: 350px;
   }
 
+  .footer-subscribe {
+    padding-bottom: 10px;
+  }
+
   .footerx {
     max-width: 728px;
   }
 
   .footer-form-two {
-    padding: 40px;
+    padding: 10px 0;
+  }
+
+  .footer-form-container-two {
+    margin-left: 0;
   }
 
   .footer-form-title {
@@ -3304,7 +3350,7 @@ figcaption {
 
   .footer-form-input {
     width: 400px;
-    padding-right: 180px;
+    padding-right: 20px;
   }
 
   .footer-wrapper-three {
@@ -3330,11 +3376,22 @@ figcaption {
   }
 
   .footer-form-title-2 {
-    margin-right: 15px;
+    text-align: center;
+    background-color: #f5f7fa;
+    margin-right: 0;
+    padding-top: 20px;
+    font-size: 16px;
   }
 
   .container-6 {
     max-width: 728px;
+  }
+
+  .hero-wrapper-2-copy {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -40px;
   }
 }
 
@@ -3538,11 +3595,11 @@ figcaption {
   }
 
   .team-member-image-two {
-    height: 150px;
+    height: auto;
   }
 
   .team-block-info {
-    height: 500px;
+    height: 300px;
   }
 
   .team-member-name-two {
@@ -3550,6 +3607,10 @@ figcaption {
     height: 9%;
     margin-bottom: 0;
     display: flex;
+  }
+
+  .team-member-text {
+    padding-top: 20px;
   }
 
   .team-slider-nav {
@@ -3635,10 +3696,16 @@ figcaption {
     padding-right: 15px;
   }
 
+  .footer-form-two {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .footer-form-container-two {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
   }
 
   .footer-form-title {
@@ -3652,6 +3719,9 @@ figcaption {
 
   .footer-form-input {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 0;
+    position: relative;
   }
 
   .footer-block-three {
@@ -3722,6 +3792,7 @@ figcaption {
   }
 
   .container {
+    margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 0;
     padding-right: 0;
@@ -3827,6 +3898,7 @@ figcaption {
 
   .team-slider {
     padding-top: 0;
+    padding-bottom: 10px;
   }
 
   .container-2 {
@@ -3847,7 +3919,7 @@ figcaption {
   }
 
   .team-block-info {
-    height: 70%;
+    height: 300px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -3972,6 +4044,13 @@ figcaption {
     padding-bottom: 0;
   }
 
+  .footer-light {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
   .footer-wrapper-two {
     flex-direction: column;
     justify-content: flex-start;
@@ -3993,31 +4072,49 @@ figcaption {
   }
 
   .footer-subscribe {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
   }
 
   .footerx {
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: none;
+    display: flex;
   }
 
   .footer-form-two {
-    padding: 0 10px 20px;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
   }
 
   .footer-form-container-two {
+    flex-flow: row;
+    align-items: center;
     margin-top: 20px;
   }
 
   .footer-form-block-two {
     text-align: center;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .footer-form-input {
     margin-bottom: 10px;
     padding-right: 20px;
+    display: block;
   }
 
   .button-primary-3.footer-form-button {
@@ -4029,11 +4126,14 @@ figcaption {
   .footer-wrapper-three {
     justify-content: center;
     align-items: center;
+    margin-left: 0;
+    padding-right: 0;
     display: flex;
   }
 
   .footer-link-three {
-    justify-content: flex-start;
+    flex-flow: row;
+    justify-content: center;
     align-items: center;
     margin-left: 0;
     display: flex;
@@ -4041,7 +4141,10 @@ figcaption {
 
   .footer-social-block-three {
     text-align: center;
+    flex-flow: row;
+    justify-content: center;
     margin-top: 0;
+    display: flex;
   }
 
   .footer-bottom-2 {
@@ -4052,10 +4155,10 @@ figcaption {
 
   .footer-form-title-2 {
     text-align: left;
-    flex-flow: column;
+    flex-flow: row;
     flex: 0 auto;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     font-size: 16px;
     display: flex;
   }
@@ -4073,6 +4176,16 @@ figcaption {
 
   .container-6 {
     max-width: none;
+  }
+
+  .hero-wrapper-2-copy {
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .image-8 {
+    margin-right: 20px;
   }
 }
 
